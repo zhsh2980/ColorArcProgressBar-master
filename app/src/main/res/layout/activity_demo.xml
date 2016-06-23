@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.shinelw.colorarcprogressbar.DemoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            />
+
+        <com.shinelw.colorarcprogressbar.ColorArcProgressBar
+            android:id="@+id/bar1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="150dp"
+
+            app:back_color="@color/orange"
+            app:back_width="3dp"
+
+            app:front_color1="@color/colorAccent"
+            app:front_width="3dp"
+
+            app:is_need_title="true"
+            app:string_title="标题"
+            app:string_title_size="20dp"
+            app:string_title_color="@color/cw_blue_500"
+
+            app:is_need_content="true"
+            app:string_content_size="60dp"
+            app:string_content_color="@color/cw_red"
+
+            app:is_need_unit="true"
+            app:string_unit="底部标题"
+            app:string_unit_size="16dp"
+            app:string_unit_color="@color/cw_grey"
+
+            app:radius_size="143"
+            app:inner_outer_space="15"
+
+            app:up_space_between_title_content="1"
+            app:up_space_between_content_unit="60"
+
+            app:max_value="100"
+            app:total_engle="360"
+            />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            />
+
+        <com.shinelw.colorarcprogressbar.ColorArcProgressBar
+            android:id="@+id/bar2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="150dp"
+            app:back_color="@android:color/darker_gray"
+            app:back_width="2dp"
+            app:front_color1="#69cbd2"
+            app:front_color2="#7eb6e2"
+            app:front_color3="#989df7"
+            app:front_width="10dp"
+            app:is_need_content="true"
+            app:is_need_title="true"
+            app:is_need_unit="true"
+            app:max_value="100"
+            app:string_title="截止当前已走"
+            app:string_unit="步"
+            app:total_engle="270"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            />
+
+        <com.shinelw.colorarcprogressbar.ColorArcProgressBar
+            android:id="@+id/bar3"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="150dp"
+            app:back_color="@android:color/darker_gray"
+            app:back_width="2dp"
+            app:front_color1="#00ff00"
+            app:front_color2="#ffff00"
+            app:front_color3="#ff0000"
+            app:front_width="10dp"
+            app:is_need_content="true"
+            app:is_need_dial="true"
+            app:is_need_title="true"
+            app:is_need_unit="true"
+            app:max_value="100"
+            app:string_title="当前速度"
+            app:string_unit="km/h"
+            app:total_engle="270"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

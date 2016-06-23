@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <declare-styleable name="ColorArcProgressBar">
+          <attr name="back_color" format="color"/>
+          <!--进度条颜色1  都写上就是混合颜色 , 写一种是单一颜色-->
+          <attr name="front_color1" format="color"/>
+          <!--进度条颜色2-->
+          <attr name="front_color2" format="color"/>
+          <!--进度条颜色3-->
+          <attr name="front_color3" format="color"/>
+          <!--进度条颜色3-->
+          <attr name="background_fill_color" format="color"/>
+          <!--背景弧形的宽度-->
+          <attr name="back_width" format="dimension"/>
+          <!--表面弧形的宽度-->
+          <attr name="front_width" format="dimension"/>
+          <attr name="is_need_title" format="boolean"/>
+          <attr name="is_need_content" format="boolean"/>
+          <attr name="is_fill_with_color" format="boolean"/>
+          <attr name="is_need_unit" format="boolean"/>
+          <!--外层的刻度表-->
+          <attr name="is_need_dial" format="boolean"/>
+          <!--是否需要进度条上放一个小点(图片)-->
+          <attr name="is_need_bitmap" format="boolean"/>
+          <!--是否出现km的单位-->
+          <attr name="is_need_km" format="boolean"/>
+          <!--进度条起点是否在12点位置-->
+          <attr name="is_start_from_12" format="boolean"/>
+          <!--内容是否自定义字体-->
+          <attr name="is_content_font_style" format="boolean"/>
+          <!--自定义哪种字体  填写字体的名字-->
+          <attr name="content_font_style" format="string"/>
+
+          <attr name="string_title_size" format="dimension"/>
+          <attr name="string_title_color" format="color"/>
+
+          <attr name="string_content_size" format="dimension"/>
+          <attr name="string_content_color" format="color"/>
+
+          <attr name="string_unit_size" format="dimension"/>
+          <attr name="string_unit_color" format="color"/>
+          <!--进度数字上面的标题-->
+          <attr name="string_title" format="string"/>
+          <attr name="string_content" format="string"/>
+          <!--底部标题-->
+          <attr name="string_unit" format="string"/>
+          <!--圆的角度  360度  或者 270度 等等-->
+          <attr name="total_engle" format="integer"/>
+          <!--直径-->
+          <attr name="radius_size" format="integer"/>
+          <!-- 标题和内容的距离  可以为负数 数值越大 间距越大-->
+          <attr name="up_space_between_title_content" format="integer"/>
+          <!-- 内容和底部字体的距离  可以为负数 数值越大 间距越大-->
+          <attr name="up_space_between_content_unit" format="integer"/>
+          <!--内外圆圈差-->
+          <attr name="inner_outer_space" format="integer"/>
+          <attr name="current_value" format="float"/>
+          <attr name="max_value" format="float"/>
+
+     </declare-styleable>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:background="@color/progress1_qingse"
+            >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start"
+                />
+
+            <com.shinelw.colorarcprogressbar.ColorArcProgressBar
+                android:id="@+id/bar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                app:back_color="@color/progress1_qingse_lite"
+                app:back_width="6dp"
+
+                app:front_color1="@color/progress1_yellow"
+                app:front_width="2dp"
+
+                app:is_need_content="true"
+                app:string_content_size="60dp"
+                app:string_content_color="@color/cw_white"
+
+                app:is_need_unit="true"
+                app:string_unit="今日里程"
+                app:string_unit_size="16dp"
+                app:string_unit_color="@color/progress1_yellow"
+
+                app:radius_size="143"
+                app:inner_outer_space="19"
+
+                app:is_need_km="true"
+
+                app:up_space_between_title_content="1"
+                app:up_space_between_content_unit="35"
+
+                app:max_value="100"
+                app:total_engle="270"
+                />
+
+
+    </LinearLayout>
+
+</LinearLayout>

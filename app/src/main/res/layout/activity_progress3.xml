@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:background="@color/progress2_yellow"
+            >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start"
+                />
+
+            <com.shinelw.colorarcprogressbar.ColorArcProgressBar
+                android:id="@+id/bar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                app:back_color="@color/progress3_qingse"
+                app:back_width="4dp"
+
+                app:front_color1="@color/progress1_yellow"
+                app:front_color2="#7eb6e2"
+                app:front_color3="#989df7"
+                app:front_width="4dp"
+
+                app:is_need_title="true"
+                app:string_title="今日步数"
+                app:string_title_size="20dp"
+                app:string_title_color="@color/cw_white"
+
+                app:is_need_content="true"
+                app:string_content_size="80dp"
+                app:string_content_color="@color/cw_white"
+
+                app:radius_size="143"
+                app:inner_outer_space="0"
+
+                app:is_need_km="false"
+
+                app:up_space_between_title_content="1"
+                app:up_space_between_content_unit="35"
+
+                app:max_value="10000"
+                app:total_engle="360"
+                />
+
+
+    </LinearLayout>
+
+</LinearLayout>

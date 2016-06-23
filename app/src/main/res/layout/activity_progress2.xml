@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/health_progress_background"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            />
+
+        <com.shinelw.colorarcprogressbar.ColorArcProgressBar
+            android:id="@+id/bar1"
+            style="@style/progress_widget"
+
+            app:back_color="@color/progress2_qingse_lite"
+            app:back_width="2dp"
+
+            app:content_font_style="HelveticaBold"
+            app:front_color1="@color/index_progress_yellow"
+
+            app:front_width="4dp"
+            app:inner_outer_space="0"
+            app:is_content_font_style="true"
+            app:is_need_bitmap="true"
+            app:is_need_content="true"
+
+            app:is_need_km="false"
+
+            app:is_need_title="true"
+            app:is_need_unit="true"
+            app:is_start_from_12="true"
+
+            app:max_value="100"
+            app:radius_size="143"
+
+            app:string_content_color="@color/white"
+            app:string_content_size="53dp"
+
+            app:string_title="王红薯"
+            app:string_title_color="@color/white"
+
+            app:string_title_size="15dp"
+            app:string_unit="今日里程"
+
+            app:string_unit_color="@color/progress2_qingse_lite"
+
+            app:string_unit_size="16dp"
+            app:total_engle="360"
+
+            app:up_space_between_content_unit="10"
+            app:up_space_between_title_content="-5"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
